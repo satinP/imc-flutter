@@ -33,18 +33,23 @@ class _HomeState extends State<Home> {
       if (imc < 18.6) {
         _message = "Você está abaixo do peso, IMC: ${imc.toStringAsPrecision(4)}";
       }
+          
       if (imc >= 18.6 && imc < 24.9) {
         _message = "Peso ideal, IMC: ${imc.toString()}";
       }
+          
       if (imc >= 24.9 && imc < 29.9) {
         _message = "Levemente acima do peso, IMC: ${imc.toString()}";
       }
+          
       if (imc >= 29.9 && imc < 34.9) {
         _message = "Obesidade grau I, IMC: ${imc.toString()}";
       }
+          
       if (imc >= 34.9 && imc < 39.9) {
         _message = "Obesidade grau II, IMC: ${imc.toString()}";
       }
+          
       if (imc >= 40) {
         _message = "Obesidade grau III, IMC: ${imc.toString()}";
       }
